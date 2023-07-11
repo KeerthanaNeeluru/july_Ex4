@@ -12,6 +12,7 @@ namespace ex4
         {
 
             string username;
+            Again:
             Console.WriteLine("Enter the user name : ");
             username = Console.ReadLine();
             if(username.Length >=6 ) {
@@ -20,6 +21,7 @@ namespace ex4
             else
             {
                 Console.WriteLine("Invalid user name");
+                goto Again;
             }
             Console.ReadKey();
 
